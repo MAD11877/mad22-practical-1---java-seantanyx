@@ -28,5 +28,31 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
+    int loops = in.nextInt();
+
+    int[] num_list = new int[loops];
+    for(int i = 0; i < loops; i++) {
+      
+      num_list[i] = in.nextInt();
+    }
+
+    int count = 0;
+    int maxCount = 0;
+    int maxValue = 0;
+    
+    for(int i = 0; i < num_list.length; i++){
+      count = 0;
+      int value = num_list[i];
+      for (int u = 0; u < num_list.length; u++){
+        if(num_list[u] == value) {
+          count++;
+          if(count > maxCount){
+            maxCount = count;
+            maxValue = num_list[u];
+          }
+        }
+      }
+    }
+    System.out.println(maxValue); 
   }
 }
