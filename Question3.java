@@ -11,7 +11,7 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
-      System.out.print("Enter a number: ");
+//       System.out.print("Enter a number: ");
       int number = in.nextInt();
       System.out.println("Multipled Integer: " + number*number);
   }
