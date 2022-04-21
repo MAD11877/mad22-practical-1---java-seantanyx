@@ -13,6 +13,6 @@ public class Question3
     Scanner in = new Scanner(System.in);
 //       System.out.print("Enter a number: ");
       int number = in.nextInt();
-      System.out.println("Multipled Integer: " + number*number);
+      System.out.println(number*number);
   }
 }
